@@ -1,0 +1,23 @@
+<HTML><HEAD><META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <META content="no-cache" http-equiv="pragma">
+    <META content="-1" http-equiv="expires">
+    <META content="text/html;charset=UTF-8" http-equiv="content-type">
+    <LINK href="problem-statement.css" rel="stylesheet" type="text/css">
+    <TITLE>餘弦相似度 (Cos similarity)</TITLE>
+    <SCRIPT type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {inlineMath: [['$$$','$$$']], displayMath: [['$$$$$$','$$$$$$']]}
+        });
+        </SCRIPT>
+        <SCRIPT async="" src="https://polygon.codeforces.com/lib/MathJax/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript">
+    </SCRIPT>
+</HEAD><BODY>
+    <DIV class="problem-statement"><DIV class="header"><DIV class="title">餘弦相似度 (Cos similarity)</DIV><DIV class="time-limit"><DIV class="property-title">time limit per test</DIV>1 second</DIV><DIV class="memory-limit"><DIV class="property-title">memory limit per test</DIV>256 megabytes</DIV><DIV class="input-file"><DIV class="property-title">input</DIV>standard input</DIV><DIV class="output-file"><DIV class="property-title">output</DIV>standard output</DIV></DIV><DIV class="legend"><P>Colten 的科展為了判斷兩個序列的相似度而使用了餘弦相似度來作為判斷的依據。</P><P>餘弦相似度運用到三角函數與向量內積的概念，假設現在給定兩個 $$$n$$$ 維的向量 $$$A,B$$$，那麼這兩個向量的餘弦相似度 $$$Similarity$$$ 的計算方式如下：</P><P>$$$$$$Similarity = \frac{A \cdot B}{|A||B|} = \frac{\sum\limits_{i=1}^{n}{(A_i \times B_i)} }{\sqrt{\sum\limits_{i=1}^{n}{(A_i)^2}} \times \sqrt{\sum\limits_{i=1}^{n}{(B_i)^2}} }$$$$$$</P><P>Colten 現在有兩個 $$$N$$$ 維的向量 $$$X,Y$$$，他想要設計一個程式來幫忙計算 $$$X$$$ 向量跟 $$$Y$$$ 向量的餘弦相似度，但是他為了製作科展的報告書而沒有時間，你能幫忙他嗎？</P></DIV><P></P><P></P><DIV class="input-specification"><DIV class="section-title">Input</DIV><P></P><P>只有一組資料。</P><P>第一行輸入一個正整數 $$$N$$$。</P><P>第二行依序輸入 $$$N$$$ 個正整數 $$$X_i$$$。</P><P>第三行依序輸入 $$$N$$$ 個正整數 $$$Y_i$$$。</P><P><SPAN class="tex-font-style-bf">測資範圍限制</SPAN></P><P></P><UL><P></P><P></P><LI> $$$1 \le N,X_i,Y_i \le 100$$$<P></P><P></P></LI></UL></DIV><P></P><P></P><DIV class="output-specification"><DIV class="section-title">Output</DIV><P></P><P>輸出只有一行，包含一個浮點數，表示 $$$X$$$ 向量與 $$$Y$$$ 向量的餘弦相似度(請無條件捨去到小數點後第二位)。</P></DIV><P></P><P></P><DIV class="sample-tests"><DIV class="section-title">Example</DIV><P></P><P></P><DIV class="sample-test"><DIV class="input"><DIV class="title">Input</DIV><PRE class="content">
+3
+10 20 30
+40 50 60
+</PRE></DIV><DIV class="output"><DIV class="title">Output</DIV><PRE class="content">
+0.97
+</PRE></DIV></DIV></DIV><P></P><P></P><DIV class="note"><DIV class="section-title">Note</DIV><P></P><P>$$$\sum$$$ 這個符號的意思是指求和。</P><P>舉例：$$$\sum\limits_{i=1}^{n}{r_i} =r_1 + ... + r_n$$$</P></DIV></DIV><P></P><P>  </P>
+
+</BODY></HTML>

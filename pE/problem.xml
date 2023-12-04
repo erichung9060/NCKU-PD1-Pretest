@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<problem revision="2" short-name="scist-time" url="https://polygon.codeforces.com/p36Tgkb/Colten/scist-time">
+    <names>
+        <name language="english" value="來用程式計算程式的時間複雜度吧！(Time complexity)"/>
+    </names>
+    <statements>
+        <statement charset="UTF-8" language="english" mathjax="true" path="statements/english/problem.tex" type="application/x-tex"/>
+        <statement charset="UTF-8" language="english" mathjax="true" path="statements/.html/english/problem.html" type="text/html"/>
+    </statements>
+    <judging cpu-name="Intel(R) Core(TM) i3-8100 CPU @ 3.60GHz" cpu-speed="3600" input-file="" output-file="" run-count="1">
+        <testset name="tests">
+            <time-limit>1000</time-limit>
+            <memory-limit>268435456</memory-limit>
+            <test-count>14</test-count>
+            <input-path-pattern>tests/%02d</input-path-pattern>
+            <answer-path-pattern>tests/%02d.a</answer-path-pattern>
+            <tests>
+                <test group="1" method="manual" points="0.0" sample="true"/>
+                <test group="1" method="manual" points="0.0" sample="true"/>
+                <test group="1" method="manual" points="0.0" sample="true"/>
+                <test group="1" method="manual" points="1.0" sample="true"/>
+                <test group="2" method="manual" points="23.0"/>
+                <test group="2" method="manual" points="0.0"/>
+                <test group="2" method="manual" points="0.0"/>
+                <test group="3" method="manual" points="0.0"/>
+                <test group="3" method="manual" points="0.0"/>
+                <test group="3" method="manual" points="25.0"/>
+                <test group="4" method="manual" points="0.0"/>
+                <test group="4" method="manual" points="0.0"/>
+                <test group="4" method="manual" points="0.0"/>
+                <test group="4" method="manual" points="51.0"/>
+            </tests>
+            <groups>
+                <group feedback-policy="complete" name="1" points="1.0" points-policy="complete-group"/>
+                <group feedback-policy="complete" name="2" points="23.0" points-policy="complete-group"/>
+                <group feedback-policy="complete" name="3" points="25.0" points-policy="complete-group"/>
+                <group feedback-policy="complete" name="4" points="51.0" points-policy="complete-group">
+                    <dependencies>
+                        <dependency group="1"/>
+                        <dependency group="2"/>
+                        <dependency group="3"/>
+                    </dependencies>
+                </group>
+            </groups>
+        </testset>
+    </judging>
+    <files>
+        <resources>
+            <file path="files/olymp.sty"/>
+            <file path="files/problem.tex"/>
+            <file path="files/statements.ftl"/>
+            <file path="files/testlib.h" type="h.g++"/>
+        </resources>
+    </files>
+    <assets>
+        <checker name="std::lcmp.cpp" type="testlib">
+            <source path="files/check.cpp" type="cpp.g++17"/>
+            <copy path="check.cpp"/>
+            <testset>
+                <test-count>0</test-count>
+                <input-path-pattern>files/tests/checker-tests/%02d</input-path-pattern>
+                <output-path-pattern>files/tests/checker-tests/%02d.o</output-path-pattern>
+                <answer-path-pattern>files/tests/checker-tests/%02d.a</answer-path-pattern>
+                <tests/>
+            </testset>
+        </checker>
+        <solutions>
+            <solution tag="main">
+                <source path="solutions/solution.cpp" type="cpp.g++17"/>
+            </solution>
+        </solutions>
+    </assets>
+    <properties>
+        <property name="tests-wellformed" value="false"/>
+    </properties>
+    <stresses>
+        <stress-count>0</stress-count>
+        <stress-path-pattern>stresses/%03d</stress-path-pattern>
+        <list/>
+    </stresses>
+</problem>

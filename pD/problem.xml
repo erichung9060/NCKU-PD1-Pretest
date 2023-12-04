@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<problem revision="2" short-name="nckupd1-double-linkedlist" url="https://polygon.codeforces.com/p3gtydS/Colten/nckupd1-double-linkedlist">
+    <names>
+        <name language="english" value="隊伍調查"/>
+    </names>
+    <statements>
+        <statement charset="UTF-8" language="english" mathjax="true" path="statements/english/problem.tex" type="application/x-tex"/>
+        <statement charset="UTF-8" language="english" mathjax="true" path="statements/.html/english/problem.html" type="text/html"/>
+    </statements>
+    <judging cpu-name="Intel(R) Core(TM) i3-8100 CPU @ 3.60GHz" cpu-speed="3600" input-file="" output-file="" run-count="1">
+        <testset name="tests">
+            <time-limit>1000</time-limit>
+            <memory-limit>268435456</memory-limit>
+            <test-count>72</test-count>
+            <input-path-pattern>tests/%02d</input-path-pattern>
+            <answer-path-pattern>tests/%02d.a</answer-path-pattern>
+            <tests>
+                <test method="manual" sample="true"/>
+                <test cmd="gen1 -n=1 1" method="generated"/>
+                <test cmd="gen1 -n=1 2" method="generated"/>
+                <test cmd="gen1 -n=1 3" method="generated"/>
+                <test cmd="gen1 -n=1 4" method="generated"/>
+                <test cmd="gen1 -n=1 5" method="generated"/>
+                <test cmd="gen1 -n=1 6" method="generated"/>
+                <test cmd="gen1 -n=1 7" method="generated"/>
+                <test cmd="gen1 -n=1 8" method="generated"/>
+                <test cmd="gen1 -n=1 9" method="generated"/>
+                <test cmd="gen1 -n=1 10" method="generated"/>
+                <test cmd="gen1 -n=1 11" method="generated"/>
+                <test cmd="gen1 -n=1 12" method="generated"/>
+                <test cmd="gen1 -n=1 13" method="generated"/>
+                <test cmd="gen1 -n=1 14" method="generated"/>
+                <test cmd="gen1 -n=1 15" method="generated"/>
+                <test cmd="gen1 -n=2 1" method="generated"/>
+                <test cmd="gen1 -n=2 2" method="generated"/>
+                <test cmd="gen1 -n=2 3" method="generated"/>
+                <test cmd="gen1 -n=2 4" method="generated"/>
+                <test cmd="gen1 -n=2 5" method="generated"/>
+                <test cmd="gen1 -n=2 6" method="generated"/>
+                <test cmd="gen1 -n=2 7" method="generated"/>
+                <test cmd="gen1 -n=2 8" method="generated"/>
+                <test cmd="gen1 -n=2 9" method="generated"/>
+                <test cmd="gen1 -n=2 10" method="generated"/>
+                <test cmd="gen1 -n=2 11" method="generated"/>
+                <test cmd="gen1 -n=2 12" method="generated"/>
+                <test cmd="gen1 -n=2 13" method="generated"/>
+                <test cmd="gen1 -n=2 14" method="generated"/>
+                <test cmd="gen1 -n=2 15" method="generated"/>
+                <test cmd="gen1 -n=3 1" method="generated"/>
+                <test cmd="gen1 -n=3 2" method="generated"/>
+                <test cmd="gen1 -n=3 3" method="generated"/>
+                <test cmd="gen1 -n=3 4" method="generated"/>
+                <test cmd="gen1 -n=3 5" method="generated"/>
+                <test cmd="gen1 -n=3 6" method="generated"/>
+                <test cmd="gen1 -n=3 7" method="generated"/>
+                <test cmd="gen1 -n=3 8" method="generated"/>
+                <test cmd="gen1 -n=3 9" method="generated"/>
+                <test cmd="gen1 -n=3 10" method="generated"/>
+                <test cmd="gen1 -n=3 11" method="generated"/>
+                <test cmd="gen1 -n=3 12" method="generated"/>
+                <test cmd="gen1 -n=3 13" method="generated"/>
+                <test cmd="gen1 -n=3 14" method="generated"/>
+                <test cmd="gen1 -n=3 15" method="generated"/>
+                <test cmd="gen1 -n=3 16" method="generated"/>
+                <test cmd="gen1 -n=3 17" method="generated"/>
+                <test cmd="gen1 -n=3 18" method="generated"/>
+                <test cmd="gen1 -n=3 19" method="generated"/>
+                <test cmd="gen1 -n=3 20" method="generated"/>
+                <test cmd="gen1 -n=3 21" method="generated"/>
+                <test cmd="gen1 -n=3 22" method="generated"/>
+                <test cmd="gen1 -n=3 23" method="generated"/>
+                <test cmd="gen1 -n=3 24" method="generated"/>
+                <test cmd="gen1 -n=3 25" method="generated"/>
+                <test cmd="gen1 -n=3 26" method="generated"/>
+                <test cmd="gen1 -n=3 27" method="generated"/>
+                <test cmd="gen1 -n=3 28" method="generated"/>
+                <test cmd="gen1 -n=3 29" method="generated"/>
+                <test cmd="gen1 -n=3 30" method="generated"/>
+                <test cmd="gen1 -n=3 31" method="generated"/>
+                <test cmd="gen1 -n=3 32" method="generated"/>
+                <test cmd="gen1 -n=3 33" method="generated"/>
+                <test cmd="gen1 -n=3 34" method="generated"/>
+                <test cmd="gen1 -n=3 35" method="generated"/>
+                <test cmd="gen1 -n=3 36" method="generated"/>
+                <test cmd="gen1 -n=3 37" method="generated"/>
+                <test cmd="gen1 -n=3 38" method="generated"/>
+                <test cmd="gen1 -n=3 39" method="generated"/>
+                <test cmd="gen1 -n=3 40" method="generated"/>
+                <test method="manual"/>
+            </tests>
+        </testset>
+    </judging>
+    <files>
+        <resources>
+            <file path="files/olymp.sty"/>
+            <file path="files/problem.tex"/>
+            <file path="files/statements.ftl"/>
+            <file path="files/testlib.h" type="h.g++"/>
+        </resources>
+        <executables>
+            <executable>
+                <source path="files/gen1.cpp" type="cpp.g++17"/>
+            </executable>
+        </executables>
+    </files>
+    <assets>
+        <checker name="std::lcmp.cpp" type="testlib">
+            <source path="files/check.cpp" type="cpp.g++17"/>
+            <copy path="check.cpp"/>
+            <testset>
+                <test-count>0</test-count>
+                <input-path-pattern>files/tests/checker-tests/%02d</input-path-pattern>
+                <output-path-pattern>files/tests/checker-tests/%02d.o</output-path-pattern>
+                <answer-path-pattern>files/tests/checker-tests/%02d.a</answer-path-pattern>
+                <tests/>
+            </testset>
+        </checker>
+        <solutions>
+            <solution tag="main">
+                <source path="solutions/solution.cpp" type="cpp.g++17"/>
+            </solution>
+        </solutions>
+    </assets>
+    <properties>
+        <property name="tests-wellformed" value="true"/>
+    </properties>
+    <stresses>
+        <stress-count>0</stress-count>
+        <stress-path-pattern>stresses/%03d</stress-path-pattern>
+        <list/>
+    </stresses>
+</problem>

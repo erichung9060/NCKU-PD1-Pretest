@@ -1,0 +1,11 @@
+10
+for(int i=0;i<t;i++)
+    for(int d=0;d<t;d++)
+for(int i=0;i<t;i++)
+for(int i=0;i<t;i++)
+    for(int d=0;d<t;d++)
+for(int i=0;i<t;i++)
+    for(int d=0;d<t;d++)
+for(int i=0;i<t;i++)
+    for(int d=0;d<t;d++)
+        for(int r=0;r<e;r++)

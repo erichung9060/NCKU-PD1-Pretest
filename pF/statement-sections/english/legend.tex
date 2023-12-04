@@ -1,0 +1,8 @@
+Colten 的科展為了判斷兩個序列的相似度而使用了餘弦相似度來作為判斷的依據。
+
+餘弦相似度運用到三角函數與向量內積的概念，假設現在給定兩個 $n$ 維的向量 $A,B$，那麼這兩個向量的餘弦相似度 $Similarity$ 的計算方式如下：
+
+$$Similarity =  \frac{A \cdot B}{|A||B|} = \frac{\sum\limits_{i=1}^{n}{(A_i \times B_i)} }{\sqrt{\sum\limits_{i=1}^{n}{(A_i)^2}} \times \sqrt{\sum\limits_{i=1}^{n}{(B_i)^2}}  }$$
+
+Colten 現在有兩個 $N$ 維的向量 $X,Y$，他想要設計一個程式來幫忙計算 $X$ 向量跟 $Y$ 向量的餘弦相似度，但是他為了製作科展的報告書而沒有時間，你能幫忙他嗎？
+

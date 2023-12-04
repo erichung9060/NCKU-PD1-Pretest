@@ -1,0 +1,15 @@
+name: "HSPC-Final"
+description: "國立成功大學暑期高中生程式設計邀請賽決賽"
+token_mode: disabled
+timezone: "+8"
+tasks:
+  - "pA"
+  - "pB"
+  - "pC"
+  - "pD"
+  - "pE"
+  - "pF"
+users:
+  - username: "test"
+    password: "test"
+    first_name: "test"

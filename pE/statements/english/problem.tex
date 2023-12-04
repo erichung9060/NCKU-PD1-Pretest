@@ -1,0 +1,59 @@
+\begin{problem}{來用程式計算程式的時間複雜度吧！(Time complexity)}{standard input}{standard output}{1 second}{256 megabytes}
+
+還記得我們有教過時間複雜度怎麼估計嗎？最簡單的方式就是計算迴圈總共跑了幾次。
+
+那現在給你一段擁有 $n$ 行的部分程式碼，每行只會包含 for 迴圈，格式為 for(int 變數名稱A=0;變數名稱A<變數名稱B;變數名稱A++)，請你設計一個程式計算這一個程式碼的時間複雜度是多少，為了統一格式，請將完整的時間複雜度輸出，運算式左到右依序是迴圈上到下。
+
+\textbf{運算式乘號請省略掉，但加號不可省略。}
+
+\textbf{兩層以上的迴圈會在每一行的前面空 $4$ 個空白區分，詳細的例子請參考範例輸入。}
+
+\InputFile
+只有一組資料。
+
+第一行輸入一個正整數 $n$。
+
+接下來輸入 $n$ 行，每行包含一個字串，保證格式滿足題目敘述。
+
+\textbf{測資範圍限制}
+
+\begin{itemize}
+
+\item $ 1 \le n \le 10$。
+
+\item 保證變數名稱都只會有一個字元，且這一個字元一定是小寫英文字母。
+
+\item 每一個迴圈內最多只會再有一個迴圈 (意旨不會出現同一層有兩個以上的迴圈的情況)。
+
+\end{itemize}
+
+\OutputFile
+輸出一個字串，表示其時間複雜度，格式為 $O($運算式$)$。
+
+\Scoring
+以下為本題的配分，本題的滿分為 $100$ 分，只要你的程式通過某個子任務就可以拿到該子任務的分數。
+
+\begin{center}
+  \begin{tabular}{ | c | c | c | c | } \hline
+    \bf{子任務} &
+    \bf{條件限制} &
+    \bf{分數} &
+    \bf{附加限制} \\ \hline
+    $1$ & 題目範例 & $1$ & 無 \\ \hline
+    $2$ & $n = 1$ & $23$ & 無 \\ \hline
+    $3$ & 沒有兩層以上的迴圈出現 & $25$ & 無 \\ \hline
+    $4$ & 題目範圍限制 & $51$ & 須通過子任務 1、2、3 \\ \hline
+    \end{tabular}
+\end{center}
+
+\Examples
+
+\begin{example}
+\exmpfile{example.01}{example.01.a}%
+\exmpfile{example.02}{example.02.a}%
+\exmpfile{example.03}{example.03.a}%
+\exmpfile{example.04}{example.04.a}%
+\end{example}
+
+\end{problem}
+

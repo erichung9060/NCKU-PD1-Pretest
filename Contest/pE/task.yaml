@@ -1,0 +1,9 @@
+name: pE
+title: 來用程式計算程式的時間複雜度吧！(Time complexity)
+time_limit: 1
+memory_limit: 256
+n_input: 14
+token_mode: disabled
+public_testcases: 0,1,2,3,4,5,6,7,8,9,10,11,12,13
+infile: ""
+outfile: ""

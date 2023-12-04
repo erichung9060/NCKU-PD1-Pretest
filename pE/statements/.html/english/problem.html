@@ -1,0 +1,49 @@
+<HTML><HEAD><META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <META content="no-cache" http-equiv="pragma">
+    <META content="-1" http-equiv="expires">
+    <META content="text/html;charset=UTF-8" http-equiv="content-type">
+    <LINK href="problem-statement.css" rel="stylesheet" type="text/css">
+    <TITLE>來用程式計算程式的時間複雜度吧！(Time complexity)</TITLE>
+    <SCRIPT type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {inlineMath: [['$$$','$$$']], displayMath: [['$$$$$$','$$$$$$']]}
+        });
+        </SCRIPT>
+        <SCRIPT async="" src="https://polygon.codeforces.com/lib/MathJax/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript">
+    </SCRIPT>
+</HEAD><BODY>
+    <DIV class="problem-statement"><DIV class="header"><DIV class="title">來用程式計算程式的時間複雜度吧！(Time complexity)</DIV><DIV class="time-limit"><DIV class="property-title">time limit per test</DIV>1 second</DIV><DIV class="memory-limit"><DIV class="property-title">memory limit per test</DIV>256 megabytes</DIV><DIV class="input-file"><DIV class="property-title">input</DIV>standard input</DIV><DIV class="output-file"><DIV class="property-title">output</DIV>standard output</DIV></DIV><DIV class="legend"><P>還記得我們有教過時間複雜度怎麼估計嗎？最簡單的方式就是計算迴圈總共跑了幾次。</P><P>那現在給你一段擁有 $$$n$$$ 行的部分程式碼，每行只會包含 for 迴圈，格式為 for(int 變數名稱A=0;變數名稱A&lt;變數名稱B;變數名稱A++)，請你設計一個程式計算這一個程式碼的時間複雜度是多少，為了統一格式，請將完整的時間複雜度輸出，運算式左到右依序是迴圈上到下。</P><P><SPAN class="tex-font-style-bf">運算式乘號請省略掉，但加號不可省略。</SPAN></P><P><SPAN class="tex-font-style-bf">兩層以上的迴圈會在每一行的前面空 $$$4$$$ 個空白區分，詳細的例子請參考範例輸入。</SPAN></P></DIV><P></P><P></P><DIV class="input-specification"><DIV class="section-title">Input</DIV><P></P><P>只有一組資料。</P><P>第一行輸入一個正整數 $$$n$$$。</P><P>接下來輸入 $$$n$$$ 行，每行包含一個字串，保證格式滿足題目敘述。</P><P><SPAN class="tex-font-style-bf">測資範圍限制</SPAN></P><P></P><UL><P></P><P></P><LI> $$$ 1 \le n \le 10$$$。<P></P><P></P></LI><LI> 保證變數名稱都只會有一個字元，且這一個字元一定是小寫英文字母。<P></P><P></P></LI><LI> 每一個迴圈內最多只會再有一個迴圈 (意旨不會出現同一層有兩個以上的迴圈的情況)。<P></P><P></P></LI></UL></DIV><P></P><P></P><DIV class="output-specification"><DIV class="section-title">Output</DIV><P></P><P>輸出一個字串，表示其時間複雜度，格式為 $$$O($$$運算式$$$)$$$。</P></DIV><P></P><P></P><DIV class="scoring"><DIV class="section-title">Scoring</DIV><P></P><P>以下為本題的配分，本題的滿分為 $$$100$$$ 分，只要你的程式通過某個子任務就可以拿到該子任務的分數。</P><P></P><CENTER> <TABLE class="tex-tabular"><TBODY><TR><TD class="tex-tabular-border-left tex-tabular-text-align-center tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom"><SPAN class="tex-font-style-bf">子任務</SPAN></TD><TD class="tex-tabular-border-left tex-tabular-text-align-center tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom"><SPAN class="tex-font-style-bf">條件限制</SPAN></TD><TD class="tex-tabular-border-left tex-tabular-text-align-center tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom"><SPAN class="tex-font-style-bf">分數</SPAN></TD><TD class="tex-tabular-border-left tex-tabular-text-align-center tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom"><SPAN class="tex-font-style-bf">附加限制</SPAN></TD></TR><TR><TD class="tex-tabular-border-left tex-tabular-text-align-center tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom">$$$1$$$</TD><TD class="tex-tabular-border-left tex-tabular-text-align-center tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom">題目範例</TD><TD class="tex-tabular-border-left tex-tabular-text-align-center tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom">$$$1$$$</TD><TD class="tex-tabular-border-left tex-tabular-text-align-center tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom">無</TD></TR><TR><TD class="tex-tabular-border-left tex-tabular-text-align-center tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom">$$$2$$$</TD><TD class="tex-tabular-border-left tex-tabular-text-align-center tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom">$$$n = 1$$$</TD><TD class="tex-tabular-border-left tex-tabular-text-align-center tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom">$$$23$$$</TD><TD class="tex-tabular-border-left tex-tabular-text-align-center tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom">無</TD></TR><TR><TD class="tex-tabular-border-left tex-tabular-text-align-center tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom">$$$3$$$</TD><TD class="tex-tabular-border-left tex-tabular-text-align-center tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom">沒有兩層以上的迴圈出現</TD><TD class="tex-tabular-border-left tex-tabular-text-align-center tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom">$$$25$$$</TD><TD class="tex-tabular-border-left tex-tabular-text-align-center tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom">無</TD></TR><TR><TD class="tex-tabular-border-left tex-tabular-text-align-center tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom">$$$4$$$</TD><TD class="tex-tabular-border-left tex-tabular-text-align-center tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom">題目範圍限制</TD><TD class="tex-tabular-border-left tex-tabular-text-align-center tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom">$$$51$$$</TD><TD class="tex-tabular-border-left tex-tabular-text-align-center tex-tabular-border-right tex-tabular-border-top tex-tabular-border-bottom">須通過子任務 1、2、3</TD></TR></TBODY></TABLE> </CENTER></DIV><P></P><P></P><DIV class="sample-tests"><DIV class="section-title">Examples</DIV><P></P><P></P><DIV class="sample-test"><DIV class="input"><DIV class="title">Input</DIV><PRE class="content">
+3
+for(int i=0;i&lt;n;i++)
+    for(int k=0;k&lt;n;k++)
+for(int i=0;i&lt;n;i++)
+</PRE></DIV><DIV class="output"><DIV class="title">Output</DIV><PRE class="content">
+O(nn+n)
+</PRE></DIV><DIV class="input"><DIV class="title">Input</DIV><PRE class="content">
+1
+for(int i=0;i&lt;m;i++)</PRE></DIV><DIV class="output"><DIV class="title">Output</DIV><PRE class="content">
+O(m)
+</PRE></DIV><DIV class="input"><DIV class="title">Input</DIV><PRE class="content">
+5
+for(int i=0;i&lt;n;i++)
+for(int i=0;i&lt;m;i++)
+for(int i=0;i&lt;n;i++)
+for(int i=0;i&lt;b;i++)
+for(int i=0;i&lt;n;i++)</PRE></DIV><DIV class="output"><DIV class="title">Output</DIV><PRE class="content">
+O(n+m+n+b+n)
+</PRE></DIV><DIV class="input"><DIV class="title">Input</DIV><PRE class="content">
+10
+for(int i=0;i&lt;n;i++)
+    for(int k=0;k&lt;n;k++)
+        for(int j=0;j&lt;m;j++)
+            for(int t=0;t&lt;q;t++)
+for(int i=0;i&lt;n;i++)
+    for(int k=0;k&lt;n;k++)
+        for(int j=0;j&lt;m;j++)
+            for(int t=0;t&lt;q;t++)
+for(int q=0;q&lt;a;q++)
+for(int h=0;h&lt;r;h++)</PRE></DIV><DIV class="output"><DIV class="title">Output</DIV><PRE class="content">
+O(nnmq+nnmq+a+r)
+</PRE></DIV></DIV></DIV></DIV><P></P><P>  </P>
+
+</BODY></HTML>
